@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/city"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+    >
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:paddingBottom="20dp"
+            android:text="Registrar País-Capital"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            />
+        <EditText
+            android:id="@+id/tvPaisIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el País"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:textColorHint="#2E2727"
+            android:textSize="30sp"
+            />
+        <EditText
+            android:id="@+id/tvCapitalIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la Capital"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:textColorHint="#2E2727"
+            android:textSize="30sp"
+            />
+
+        <Button
+            android:id="@+id/btAlmacenar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B59AD9"
+            android:fontFamily="serif"
+            android:text="Almacenar"
+            android:textColor="#0C1F9B"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/tvConsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:paddingBottom="20dp"
+            android:text="Buscar País-Capital"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            />
+        <EditText
+            android:id="@+id/etCapitales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el país"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:textColorHint="#2E2727"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btObtenerCapital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B59AD9"
+            android:fontFamily="serif"
+            android:text="Obtener Capital"
+            android:textColor="#0C1F9B"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCapital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
